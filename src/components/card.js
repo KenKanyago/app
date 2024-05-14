@@ -1,17 +1,16 @@
 import React from "react";
+import FinacialSummery from "./financialSummery";
 
-
-export default function Card(){
+export default function Card({title, text, color},){
     return(
-<div> 
-        
-        <div class="flex flex-row space-x-6 absolute top-0 left-1/3 my-4">
-            <div class="max-w-md rounded-lg overflow-hidden shadow-md bg-white">
-            <h4 class="text-xl font-semibold mb-2">Total Period Income</h4>
-            <p class="text-2xl font-bold text-green-600">Ksh:1,680,000</p>
+<> 
+<div class="max-w-md rounded-lg overflow-hidden shadow-md bg-white">
+                <h4 class={`text-xl font-semibold mb-2"`}>{title}</h4>
+                <p class={`text-2xl font-bold text-${color}`}>{text}</p>
             </div>
+          
 
-            <div class="max-w-md rounded-lg overflow-hidden shadow-md bg-white">
+            {/* <div class="max-w-md rounded-lg overflow-hidden shadow-md bg-white">
                 <h4 class="text-xl font-semibold mb-2">Total Period Expenses</h4>
                 <p class="text-2xl font-bold text-red-600">Ksh:1,285,000</p>
             </div>
@@ -19,9 +18,9 @@ export default function Card(){
             <div class="max-w-md rounded-lg overflow-hidden shadow-md bg-white">
                 <h4 class="text-xl font-semibold mb-7" >My Savings  </h4>
                 <p class="text-2xl font-bold text-green-600">Ksh:395,000</p>
-            </div>
-        </div>
- </div>
+            </div> */}
+   </>     
+ 
     )
    
 
