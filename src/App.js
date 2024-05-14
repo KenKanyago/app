@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './components/nav';
 import Card from './components/card';
 import FinacialSummery from './components/financialSummery';
+import RecentTransactions from './components/Recent Transactions';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       
       <Nav />
       <FinacialSummery />
+      <RecentTransactions />
     </>
   );
 }
