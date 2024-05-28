@@ -7,12 +7,12 @@ import RecentTransactions from './components/Recent Transactions';
 
 function App() {
   return (
-    <>
+    <div class="lg:flex m-16 text-center lg:text-left justify-center items-center">
       
       <Nav />
       <FinacialSummery />
       <RecentTransactions />
-    </>
+    </div>
   );
 }
 

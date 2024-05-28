@@ -17,7 +17,7 @@ export default function RecentTransactions(){
 
     return(
         <div>
-            <h1>Recenrt Transactions</h1>
+            
             <DataTable headers={transactionHeaders} data={transactionData}/> 
         </div>
     )
